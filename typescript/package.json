@@ -1,0 +1,27 @@
+{
+  "name": "decentralized-bradley-terry-rating",
+  "version": "1.0.0",
+  "description": "Decentralized Bradley–Terry rating updates from pairwise match results.",
+  "author": "Calbona",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc -p tsconfig.test.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
